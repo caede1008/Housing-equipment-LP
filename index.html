@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>パナソニック 新春初売り SALE</title>
+    <style>
+        html, body, div, span, object, iframe,
+        h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+        abbr, address, cite, code,
+        del, dfn, em, img, ins, kbd, q, samp,
+        small, strong, sub, sup, var,
+        b, i,
+        dl, dt, dd, ol, ul, li,
+        fieldset, form, label, legend,
+        table, caption, tbody, tfoot, thead, tr, th, td,
+        article, aside, canvas, details, figcaption, figure, 
+        footer, header, hgroup, menu, nav, section, summary,
+        time, mark, audio, video {
+            margin:0;
+            padding:0;
+            border:0;
+            outline:0;
+            font-size:100%;
+            vertical-align:baseline;
+            background:transparent;
+        }
+        body {
+            line-height:1;
+            max-width: 1800px;
+            margin: auto;
+        }
+        article,aside,details,figcaption,figure,
+        footer,header,hgroup,menu,nav,section { 
+            display:block;
+        }
+        ul {
+            list-style:none;
+        }
+        blockquote, q {
+            quotes:none;
+        }
+        blockquote:before, blockquote:after,
+        q:before, q:after {
+            content:'';
+            content:none;
+        }
+        a {
+            margin:0;
+            padding:0;
+            font-size:100%;
+            vertical-align:baseline;
+            background:transparent;
+            text-decoration: none;
+        }
+        a:hover{
+            opacity: 0.8;
+        }
+        ins {
+            background-color:#fff;
+            color:#000;
+            text-decoration:none;
+        }
+        mark {
+            background-color:#fff;
+            color:#000; 
+            font-style:italic;
+            font-weight:bold;
+        }
+        del {
+            text-decoration: line-through;
+        }
+        abbr[title], dfn[title] {
+            border-bottom:1px dotted;
+            cursor:help;
+        }
+        table {
+            border-collapse:collapse;
+            border-spacing:0;
+        }
+        hr {
+            display:block;
+            height:1px;
+            border:0;   
+            border-top:1px solid #cccccc;
+            margin:1em 0;
+            padding:0;
+        }
+        input, select {
+            vertical-align:middle;
+        }
+        body, section, img {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+            margin: auto !important;
+            background-color: #D6A60C;
+        }
+        .fixed-banner{
+            position: fixed;
+            right: 0;
+            top: 200px;
+            width: 6%;
+        }
+        .fixed-banner img{
+            width: 100%;
+        }
+        .mainvisual {
+            width: 100%;
+        }
+        .mainvisual img {
+            width: 100%;
+        }
+        .ticket-section {
+            background-image: url('./images/ticket-section-background.png');
+            background-size: cover;
+            width: 100%;
+            background-repeat: no-repeat;
+            padding-bottom: 5%;
+        }
+        .main-ticket{
+            width: 50%;
+            margin: auto;
+        }
+        .ticket-contents {
+            background-image: url('./images/ticket-contents-background.png');
+            background-size: cover;
+            width: 80%;
+            margin: auto;
+            margin-top: 30%;
+            background-repeat: no-repeat;
+            display: flex;
+            flex-direction: column;
+            padding-bottom: 5%;
+        }
+        .main-ticket{
+            display: block;
+            width: 70%;
+            margin: auto;
+            margin-top: 40%;
+            margin-bottom: 5%;
+        }
+        .main-ticket img{
+            width: 100%;
+        }
+        .ticket-box{
+            width: 90%;
+            display: flex;
+            justify-content: space-between;
+            margin: auto;
+            margin-top: 0%;
+        }
+        .sub-ticket{
+            width: 32%;
+        }
+        .sub-ticket img{
+            width: 100%;
+        }
+        .attention-section{
+            width: 100%;
+            margin: auto;
+        }
+        .attention-section img{
+            width: 100%;
+        }
+        .recommend-section{
+            background-image: url('./images/recommend-section-bacground.png');
+            background-size: cover;
+            width: 100%;
+            background-repeat: no-repeat;
+        }
+        .recommend-contents{
+            background-image: url('./images/recommend-contents.png');
+            background-size: cover;
+            width: 85%;
+            margin: auto;
+            margin-top: 5%;
+            background-repeat: no-repeat;
+            display: flex;
+            flex-direction: column;
+            padding-top: 25%;
+        }
+        .recommend-box-row{
+            display: flex;
+            justify-content: space-between;
+            width: 90%;
+            margin: auto;
+            margin-bottom: 5%;
+        }
+        .recommend-box{
+            width: 32%;
+        }
+        .recommend-box img{
+            width: 100%;
+        }
+        .category-section{
+            background-image: url('./images/category-background.png');
+            background-size: cover;
+            width: 100%;
+            margin: auto;
+            background-repeat: no-repeat;
+            background-position: top;
+            display: flex;
+            flex-direction: column;
+            padding-bottom: 5%;
+        }
+        .section-title{
+            width: 70%;
+            margin: auto;
+            margin-top: 5%;
+            display: flex;
+            justify-content: center;
+        }
+        .section-title img{
+            width: 100%;
+        }
+        .category-contents{
+            width: 70%;
+            display: flex;
+            justify-content: space-between;
+            margin: auto;
+            margin-top: 5%;
+        }
+        .category-box{
+            width: 48%;
+        }
+        .category-box img{
+            width: 100%;
+        }
+        .step-section{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            background-color: white;
+            padding-bottom: 5%;
+        }
+        .step-contents{
+            width: 70%;
+            margin: auto;
+            margin-top: 7%;
+        }
+        .step-contents img{
+            width: 100%;
+        }
+        .estimation-section{
+            background-image: url('./images/estimation-section.png');
+            background-size: cover;
+            width: 100%;
+            margin: auto;
+            background-repeat: no-repeat;
+            background-position: top;
+            display: flex;
+            flex-direction: column;
+            padding-bottom: 5%;
+        }
+        .esmation-img{
+            width: 85%;
+            margin: auto;
+            margin-top: 5%;
+        }
+        .esmation-img img{
+            width: 100%;
+        }
+        .estimation-title{
+            margin-bottom: 0%;
+        }
+        
+    </style>
+</head>
+<body>
+    <a class="fixed-banner" href="https://item.rakuten.co.jp/conpaneya/c/0000000657/#p2">
+        <img src="./images/side-banner.png">
+    </a>
+    <section class="mainvisual">
+        <img src="./images/mainvisual_pc.png" alt="メインビジュアル">
+    </section>
+    <section class="ticket-section">
+        <div class="ticket-contents">
+            <a class="main-ticket" href="#">
+                <img src="./images/main-ticket.png">
+            </a>
+            <div class="ticket-box">
+                <a class="sub-ticket" href="#">
+                    <img src="./images/sub-ticket1.png">
+                </a>
+                <a class="sub-ticket" href="#">
+                    <img src="./images/sub-ticket1.png">
+                </a>
+                <a class="sub-ticket" href="#">
+                    <img src="./images/sub-ticket1.png">
+                </a>
+            </div>
+        </div>
+    </section>
+    <section class="attention-section">
+        <img src="./images/attention-section.png">
+    </section>
+    <section class="recommend-section">
+        <div class="recommend-contents">
+            <div class="recommend-box-row">
+                <a class="recommend-box" href="">
+                    <img src="./images/recommend-box-img.png">
+                </a>
+                <a class="recommend-box" href="">
+                    <img src="./images/recommend-box-img.png">
+                </a>
+                <a class="recommend-box" href="">
+                    <img src="./images/recommend-box-img.png">
+                </a>
+            </div>
+            <div class="recommend-box-row">
+                <a class="recommend-box" href="">
+                    <img src="./images/recommend-box-img.png">
+                </a>
+                <a class="recommend-box" href="">
+                    <img src="./images/recommend-box-img.png">
+                </a>
+                <a class="recommend-box" href="">
+                    <img src="./images/recommend-box-img.png">
+                </a>
+            </div>
+        </div>
+    </section>
+    <section class="category-section">
+        <div class="category-title section-title">
+            <img src="./images/category-title.png">
+        </div>
+        <div class="category-contents">
+            <a class="category-box" href="https://search.rakuten.co.jp/search/mall/%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E3%82%AD%E3%83%83%E3%83%81%E3%83%B3%E3%80%80%E3%83%91%E3%83%8A%E3%82%BD%E3%83%8B%E3%83%83%E3%82%AF/?sf=1&sid=195744">
+                <img src="./images/category-box.png">
+            </a>
+            <a class="category-box" href="https://search.rakuten.co.jp/search/mall/%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E3%83%90%E3%82%B9%E3%80%80%E3%83%91%E3%83%8A%E3%82%BD%E3%83%8B%E3%83%83%E3%82%AF/?sf=1&sid=195744
+            ">
+                <img src="./images/category-box.png">
+            </a>
+        </div>
+    </section>
+    <section class="step-section">
+        <div class="step-title section-title">
+            <img src="./images/step-title.png">
+        </div>
+        <div class="step-contents">
+            <img src="./images/step-section-img.png">
+        </div>
+    </section>
+    <section class="estimation-section">
+        <div class="estimation-title section-title">
+            <img src="./images/estimation-title.png">
+        </div>
+        <a class="esmation-img" href="https://item.rakuten.co.jp/conpaneya/c/0000000657/#p2">
+            <img src="./images/estimation-box.png">
+        </a>
+    </section>
+    <section class="estimation-section">
+        <div class="estimation-title section-title">
+            <img src="./images/line-title.png">
+        </div>
+        <a class="esmation-img" href="https://link.rakuten.co.jp/0/137/183/">
+            <img src="./images/line-box.png">
+        </a>
+    </section>
+</body>
+</html>
