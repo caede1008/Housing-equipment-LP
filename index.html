@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link href="./" rel="stylesheet">
     <title>パナソニック 新春初売り SALE</title>
     <style>
         html, body, div, span, object, iframe,
@@ -100,6 +101,12 @@
             margin: auto !important;
             background-color: #D6A60C;
         }
+        .pc{
+            display: block;
+        }
+        .sp{
+            display: none;
+        }
         .fixed-banner{
             position: fixed;
             right: 0;
@@ -108,6 +115,16 @@
         }
         .fixed-banner img{
             width: 100%;
+        }
+        .fixed-banner-bottom{
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            height: 6vh;
+        }
+        .fixed-banner-bottom img{
+            width: 100%;
+            height: 6vh;
         }
         .mainvisual {
             width: 100%;
@@ -163,6 +180,7 @@
         .attention-section{
             width: 100%;
             margin: auto;
+            background-color: white;
         }
         .attention-section img{
             width: 100%;
@@ -184,15 +202,17 @@
             flex-direction: column;
             padding-top: 25%;
         }
-        .recommend-box-row{
+        .recommend-box-contents{
             display: flex;
             justify-content: space-between;
             width: 90%;
             margin: auto;
+            flex-wrap: wrap;
             margin-bottom: 5%;
         }
         .recommend-box{
             width: 32%;
+            margin-bottom: 5%;
         }
         .recommend-box img{
             width: 100%;
@@ -268,12 +288,42 @@
         .estimation-title{
             margin-bottom: 0%;
         }
-        
+        @media (max-width: 1024px) {
+            .fixed-banner{
+                width: 10%;
+                top: 500px;
+            }
+        }
+        @media (max-width: 599px) {
+            .pc{
+                display: none;
+            }
+            .sp{
+                display: block;
+            }
+            .recommend-box{
+                width: 48%;
+            }
+            .recommend-contents{
+                background-image: url('./images/recommend-contents-sp.png');
+            }
+        }
+        @media (max-width: 400px) {
+            .fixed-banner-bottom{
+                height: 8vh;
+            }
+            .fixed-banner-bottom img{
+                height: 8vh;
+            }
+        }
     </style>
 </head>
 <body>
-    <a class="fixed-banner" href="https://item.rakuten.co.jp/conpaneya/c/0000000657/#p2">
+    <a class="fixed-banner pc" href="https://item.rakuten.co.jp/conpaneya/c/0000000657/#p2">
         <img src="./images/side-banner.png">
+    </a>
+    <a class="fixed-banner-bottom sp" href="https://item.rakuten.co.jp/conpaneya/c/0000000657/#p2">
+        <img src="./images/bottom-banner.png">
     </a>
     <section class="mainvisual">
         <img src="./images/mainvisual_pc.png" alt="メインビジュアル">
@@ -288,10 +338,10 @@
                     <img src="./images/sub-ticket1.png">
                 </a>
                 <a class="sub-ticket" href="#">
-                    <img src="./images/sub-ticket1.png">
+                    <img src="./images/sub-ticket2.png">
                 </a>
                 <a class="sub-ticket" href="#">
-                    <img src="./images/sub-ticket1.png">
+                    <img src="./images/sub-ticket3.png">
                 </a>
             </div>
         </div>
@@ -301,26 +351,48 @@
     </section>
     <section class="recommend-section">
         <div class="recommend-contents">
-            <div class="recommend-box-row">
-                <a class="recommend-box" href="">
-                    <img src="./images/recommend-box-img.png">
+            <div class="recommend-box-contents">
+                <a class="recommend-box" href="https://item.rakuten.co.jp/conpaneya/xbp3da-lclass/">
+                    <img src="./images/recommend-img1.png">
                 </a>
-                <a class="recommend-box" href="">
-                    <img src="./images/recommend-box-img.png">
+                <a class="recommend-box" href="https://item.rakuten.co.jp/conpaneya/lclassplan01/">
+                    <img src="./images/recommend-img2.png">
                 </a>
-                <a class="recommend-box" href="">
-                    <img src="./images/recommend-box-img.png">
+                <a class="recommend-box" href="https://item.rakuten.co.jp/conpaneya/vstylei255s20s-s/">
+                    <img src="./images/recommend-img3.png">
+                </a>
+                <a class="recommend-box" href="https://item.rakuten.co.jp/conpaneya/vstylei255s40s/">
+                    <img src="./images/recommend-img4.png">
+                </a>
+                <a class="recommend-box" href="https://item.rakuten.co.jp/conpaneya/lacui255s10/">
+                    <img src="./images/recommend-img5.png">
+                </a>
+                <a class="recommend-box" href="https://item.rakuten.co.jp/conpaneya/lacui255s30/">
+                    <img src="./images/recommend-img6.png">
                 </a>
             </div>
-            <div class="recommend-box-row">
-                <a class="recommend-box" href="">
-                    <img src="./images/recommend-box-img.png">
+        </div>
+    </section>
+    <section class="recommend-section">
+        <div class="recommend-contents">
+            <div class="recommend-box-contents">
+                <a class="recommend-box" href="https://item.rakuten.co.jp/conpaneya/xbp3da-oflora/">
+                    <img src="./images/recommend-img7.png">
                 </a>
-                <a class="recommend-box" href="">
-                    <img src="./images/recommend-box-img.png">
+                <a class="recommend-box" href="https://item.rakuten.co.jp/conpaneya/oflora1616/">
+                    <img src="./images/recommend-img8.png">
                 </a>
-                <a class="recommend-box" href="">
-                    <img src="./images/recommend-box-img.png">
+                <a class="recommend-box" href="https://item.rakuten.co.jp/conpaneya/bevas1216/">
+                    <img src="./images/recommend-img9.png">
+                </a>
+                <a class="recommend-box" href="https://item.rakuten.co.jp/conpaneya/bevas1616/">
+                    <img src="./images/recommend-img10.png">
+                </a>
+                <a class="recommend-box" href="https://item.rakuten.co.jp/conpaneya/mr1116/">
+                    <img src="./images/recommend-img11.png">
+                </a>
+                <a class="recommend-box" href="https://item.rakuten.co.jp/conpaneya/mr1216/">
+                    <img src="./images/recommend-img12.png">
                 </a>
             </div>
         </div>
@@ -331,11 +403,10 @@
         </div>
         <div class="category-contents">
             <a class="category-box" href="https://search.rakuten.co.jp/search/mall/%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E3%82%AD%E3%83%83%E3%83%81%E3%83%B3%E3%80%80%E3%83%91%E3%83%8A%E3%82%BD%E3%83%8B%E3%83%83%E3%82%AF/?sf=1&sid=195744">
-                <img src="./images/category-box.png">
+                <img src="./images/category-box1.png">
             </a>
-            <a class="category-box" href="https://search.rakuten.co.jp/search/mall/%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E3%83%90%E3%82%B9%E3%80%80%E3%83%91%E3%83%8A%E3%82%BD%E3%83%8B%E3%83%83%E3%82%AF/?sf=1&sid=195744
-            ">
-                <img src="./images/category-box.png">
+            <a class="category-box" href="https://search.rakuten.co.jp/search/mall/%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E3%83%90%E3%82%B9%E3%80%80%E3%83%91%E3%83%8A%E3%82%BD%E3%83%8B%E3%83%83%E3%82%AF/?sf=1&sid=195744">
+                <img src="./images/category-box2.png">
             </a>
         </div>
     </section>
